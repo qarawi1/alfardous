@@ -4,6 +4,11 @@ body {
     text-align: right;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* لمحاذاة المحتوى في منتصف الصفحة */
+    align-items: center; /* لمحاذاة المحتوى عموديًا */
+    min-height: 100vh; /* لضمان أن الصفحة تمتد عبر كامل الشاشة */
+    background-color: #f4f4f4; /* لون خلفية ناعم */
 }
 
 h2 {
@@ -116,4 +121,26 @@ button:hover {
 
 #motorForm button:hover {
     background-color: #255CCF;
+}
+
+#identifierErrorMessage, #phoneErrorMessage, #resetPasswordMessage {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    display: block; /* تأكد من أن الرسالة تظهر */
+}
+
+#loginForm, #registerForm {
+    width: 100%;
+    max-width: 400px; /* تحديد أقصى عرض للنموذج */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* تأثير الظل للنموذج */
+    text-align: center;
 }
